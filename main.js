@@ -45,7 +45,9 @@ const controller = {
       modal.crossPositon.push(index)
       this.checkLine(modal.crossPositon, modal.cross)
     }
-    if (modal.counterClick === 9 && controller.currentState !== GAME_STATE.GameFinished) console.log('Ended in a draw')
+    if (modal.counterClick === 9 && controller.currentState !== GAME_STATE.GameFinished){
+        alert('Ended in a draw')
+    }
   },
   checkLine(positionArray, symbol) {
     modal.lines.forEach(line => {
